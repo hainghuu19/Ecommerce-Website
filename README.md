@@ -1,11 +1,3 @@
-# SE-2023.1
-
-# Note
-Do tất cả đang sử dụng remote database nên khi có thay đổi database (model, data) thì mọi người cẩn thận do có thể ảnh hưởng đến database của người khác đang sử dụng
-
-# Set up database
-- Install `Mongo Compass`: https://www.mongodb.com/try/download/shell
-- Connect to database url: `mongodb+srv://dangphuckhoa2003:22102003@laptopstore.1h30oun.mongodb.net/test` to connect to remote database
 
 # How to run project
 - Run `npm i` to install all dependencies for project
