@@ -1,0 +1,26 @@
+extend base
+
+block content 
+    .container
+        .row
+            .col-lg-2
+            .col-lg-8.p-3 
+                form(class="needs-validation login-form" novalidate)
+                    .form-group
+                        label(for='exampleInputEmail1') Email 
+                        input#email.form-control(type='email' aria-describedby='emailHelp' required )
+                        .invalid-feedback
+                            Please Chưa có email hoặc email không hợp lệ
+                    .form-group
+                        label(for='exampleInputPassword1') Mật khẩu
+                        input#password.form-control(type='password' required)
+                        .invalid-feedback
+                            Please Chưa có mật khẩu hoặc mật khẩu không hợp lệ
+                    .form-group.d-flex.justify-content-between.align-items-center.button-group
+                    a.col-lg-4(href="/signup") Chưa có tài khoản?
+                    button.mr-3.btn.btn-primary(type='submit') Đăng nhập
+                    a.col-lg-4(href="/forgot-password") Quên mật khẩu?
+            .col-lg-2 
+
+block append script 
+    script(src="/js/validateForm.mjs")
